@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+
+.news-title{
+	float:left;
+	width:80%;
+	padding:20px;
+	border:;
+	box-sizing:border-box;
+	position:relative;
+	margin-top:20px;
+	margin-bottom:20px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+	transition: transform 0.5s;
+	background-color:white;
+}
+.news-title > h1{
+	text-align:center;
+	line-height:100px;
+}
+.news-title > p{
+	margin:0 7% 0 7%;
+}
+.news-title > img{
+	width:600px;
+	display:block;
+	object-fit:cover;
+	margin:0 auto;
+	
+}

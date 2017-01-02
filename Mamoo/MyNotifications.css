@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+#my-alert{
+	width:385px;
+	padding:0 16px 0 16px;
+	background-color:#4CAF50;
+	color:white;
+	float:right;
+	position:fixed;
+	right:-385px;
+	top:40px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	transition: transform 0.5s;
+	z-index:9;
+}
+.notification h3{
+	margin:10px 0 10px 0;
+}
+.notification p{
+	margin:15px 0 15px 0;
+}
+.notification span{
+	float:right;
+}
+.notification span:hover{
+	cursor:pointer;
+}

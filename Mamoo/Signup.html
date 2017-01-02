@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Signup</title>
+<style>
+#signup-form{
+	width:500px;
+	height:630px;
+	border:;
+	position:absolute;
+	background-color:#FE9F99;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-left:34%;
+}
+#input-content{
+	float:left;
+	width:80%;
+	background-color:white;
+	margin-left:10%;
+	padding-top:30px;
+	color:#999;
+}
+#signup-form .text{
+	font-size:17px;
+	width:80%;
+	height:40px;
+	padding-left:12px;
+	margin-left:10%;
+	box-sizing:border-box;
+	border:none;
+	background-color:#EBEBEB;
+}
+#input-content input:nth-child(2){
+	margin-top:10px;
+}
+#input-content input:nth-child(3){
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#input-content input:focus{
+	border-left:5px solid #6BCFB7;
+}
+#input-content>div{
+	color:#F77B7D;
+	padding:20px 40px 20px 40px;
+}
+#input-content>div>a{
+	text-decoration:none;
+	color:#228FEC;
+}
+#signup-form .check-box{
+	margin-left:10%;
+	box-sizing:border-box;
+	width:20px;
+	height:20px;
+	margin-top:10px;
+}
+#signup-form div:first-child{
+	font-size:24px;
+	padding:30px;
+	color:white;
+}
+#signup-form div:first-child span{
+	font-size:14px;
+	float:right;
+	padding:10px 10px 0 0;
+}
+form div{
+	width:100%;
+	float:left;
+	border:;
+	padding:10px 0 10px 0;
+	
+	box-sizing:border-box;
+}
+#finishbtn{
+	width:70%;
+	height:40px;
+	font-size:18px;
+	background-color:#F77B7D;
+	color:white;
+	border:none;
+	margin-left:15%;
+	margin-top:30px;
+}
+#finishbtn:hover{
+	background-color:#72CDBB;
+	color:white;
+	border:none;
+	cursor:pointer;
+}
+</style>
+</head>
+
+<body style="height:1000px">
+	<form id="signup-form" class="signup-form">
+    	<div>Sign up with email <span>Already a member? <a>Sign in</a></span></div>
+    	<div id="input-content">
+        	<input id="secondFocus" class="text" type="text" placeholder="Username (display to others)" />
+    		<input class="text" type="text" placeholder="Email" />
+    		<input class="text" type="password" placeholder="Password" />
+            <input class="text" type="repassword" placeholder="Confirm Password" />
+        
+        	<input class="check-box" type="checkbox" /> &nbsp;Recipes Notes<br />
+        	<input class="check-box" type="checkbox" /> &nbsp;Daily Menus<br />
+        	<input class="check-box" type="checkbox" /> &nbsp;Expert Advice<br />
+        	<div>By creating an account, you agree to our <a href="#">terms & conditions.</a></div>
+        </div>
+        <div><input id="finishbtn" type="submit" value="Sign Me Up" /></div>
+    </form>
+
+</body>
+</html>

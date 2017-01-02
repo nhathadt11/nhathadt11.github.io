@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MAMOO</title>
+<link rel="shortcut icon" href="Logo/TitleBarMamoo.png" type="image/png">
+<link href="https://fonts.googleapis.com/css?family=Raleway&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="Header.css">
+<link rel="stylesheet" type="text/css" href="Specialty.css">
+<link rel="stylesheet" type="text/css" href="Footer.css">
+<link rel="stylesheet" type="text/css" href="Signin.css">
+<link rel="stylesheet" type="text/css" href="Signup.css">
+<link rel="stylesheet" type="text/css" href="MyNotifications.css">
+<link rel="stylesheet" type="text/css" href="BrowseMenu.css">
+<link rel="stylesheet" type="text/css" href="DishDetail.css">
+<style>
+*{
+	font-family:Raleway, Helvetica, sans-serif;
+}
+div{
+	box-sizing:border-box;
+}
+#content-container{
+	float:left;
+	border:;
+	position:relative;
+	margin-left:10%;
+}
+.content-column{
+	float:left;
+	width:300px;
+	border:;
+	margin:20px;
+}
+</style>
+<script src="Specialty.js"></script>
+<script src="Header.js"></script>
+<script src="Signin.js"></script>
+<script src="Signup.js"></script>
+<script src="CheckValidation.js"></script>
+<script src="Signup_signin.js"></script>
+<script src="MyNotifications.js"></script>
+<script src="BrowseMenu.js"></script>
+<script>
+function resizeIframe(x) {
+	//alert(x.innerHeight);
+	  
+	//var inf=document.getElementsById('myframe').contentDocument;
+	//alert(inf);
+	//alert(inf.contentWindow.document.documentElement.clientHeight);
+	//inf.height = inf.contentWindow.document.body.scrollHeight + "px";
+	//alert(inf.scrollHeight);
+}
+function chinh(){
+  	
+	var tag=document.getElementById("id_myframe");
+	alert(tag.height);
+	//var w=tag.contentWindow.document.documentElement.scrollHeight;
+	//if(w=="undefine" || w==null)
+	var   w=tag.contentDocument.documentElement.scrollHeight;
+	alert(w);
+	tag.height=w; 
+}
+
+</script> 
+</head>
+
+<body onload="playGallery(), checkSignIn()">
+<div id="header">
+	<div id="header-left"><img id="logo" src="Logo/MamooLogo2wob.png" onclick="openNewPage('Home')"/></div>
+    
+    <div id="header-right-top">
+    	<a style="margin-right:40px" onclick="showSignupBox()" id="header-signup">Sign up</a>
+        <a onclick="showSigninBox()" id="header-signin">Sign in</a>
+    </div>
+    
+    <div id="header-right-bot">
+    	<div id="nav">
+    		<div>
+            	<div class="menu">NEWS</div>
+                <div class="menu-content">
+                	<!---->
+                </div>
+            </div>
+            <div>
+            	<div class="menu">BROWSE</div>
+                <div class="menu-content">
+                	<a>Appetizers</a>
+                    <a href="BrowseBreakfast&Brunch.html" target="_self">Breakfast &amp; Brunch</a>
+                    <a>Desserts</a>
+                    <a>Dinner</a>
+                    <a>Drinks</a>
+                    <a>Entrées</a>
+                    <a>Fruits &amp; Vegestables</a>
+                    <a>Lunch</a>
+                    <a>Meat & Poultry</a>
+                    <a>Noodles</a>
+                    <a>Salads</a>
+                    <a>Seafood</a>
+                    <a>Soups &amp; Stews</a>
+                </div>
+            </div>
+            <div>
+            	<div class="menu">SPECIALTY</div>
+                <div class="menu-content">
+                	<a>Chinese</a>
+                    <a>Korean</a>
+                    <a href="JapaneseFoods.html" target="myframe">Japanese</a>
+                    <a href="VietnameseFoods.html" target="myframe" onclick="chinh()">Vietnamese</a>
+                </div>
+            </div>
+            <div>
+            	<div class="menu">HEALTHY FOODS</div>
+                <div class="menu-content">
+                	<!---->
+                </div>
+            </div>
+       	</div>
+        <div id="search-box">
+        	<input id="search-box-input" type="search" placeholder=" Find a Recipe" onclick="checkSearchBox()"/><img src="Searchwob.png" />
+        </div>
+    </div>
+</div>
+
+<div id="body">
+	<div id="specialty">
+    		<img id="img1" class="imgShow" src="Gallery/1.jpg" />
+        	<img id="img2" class="imgShow" src="Gallery/2.jpg" />
+            <img id="img3" class="imgShow" src="Gallery/3.jpg" />
+            <img id="img4" class="imgShow" src="Gallery/4.jpg" />
+            <div id="prev"><img src="ButtonIcon/icon-arrow-back-128.png" onclick="backImage()"/></div>
+            <div id="next"><img src="ButtonIcon/icon-arrow-next-128.png" onclick="nextImage()"/></div>
+            <div class="thumbnail" id="thumb1">
+            	<h2>Pho</h2>
+            	<p>Vietnamese noodle soup consisting of broth, linguine-shaped rice noodles called bánh phở, a few herbs, and meat, primarily served with either beef or chicken.
+                </p>
+            </div>
+            <div class="thumbnail" id="thumb2">
+            	<h2>Strawberry Oatmeal Breakfast Smoothie</h2>
+                <p>This is a fast vegan smoothie with a deep pink color and a rich, creamy texture. VERY filling, and perfect for people in a rush breakfast when it's this fast to make! I use vitamin fortified soy milk.
+                </p>
+            </div>
+            <div class="thumbnail" id="thumb3">
+            	<h2>Rice Dumplings/Zong</h2>
+            	<p>
+                To make zong, you wrap sticky rice in bamboo leaves and tie it into a triangular shape. It is cooked by steaming or boiling in hot water. Zong is normally eaten by dipping in sugar.
+            	</p>
+            </div>
+            <div class="thumbnail" id="thumb4">
+            	<h2>Spicy Queso Fresco Guacamole</h2>
+            	<p>
+                Happy Cinco de Mayo everyone!! And if you plan to have a guacamole tasting par-tay like me…. well, here are a few more guacamole recipes to wow your guests!
+            	</p>
+            </div>
+            <div id="todaysRecipe">Today's Recipes</div>
+    </div>
+    <!--Loaded content-->
+<div id="content-container">
+	<!-- First column-->
+    <div class="content-column">
+    <div class="recipe">
+		<img src="Gallery/spe_vietnamese_fresh_spring_rolls.jpg" />
+    	<img src="ButtonIcon/heart_button.png" class="heart"/>
+		<h3>Vietnamese Fresh Spring Rolls</h3>
+    	<p class="description">With fresh vegestables wrapped in rice paper, these Vietnamese spring rolls are a refressing appetizer for an Asian-inspired meal.</p>
+    	<div>Recipe by Paula</div>
+    	<div><img src="ButtonIcon/heart.jpg" />120</div>
+	</div>
+
+	<div class="recipe">
+		<img src="Gallery/spe_vietnamese_golden_chicken_wings.jpg" />
+    	<img src="ButtonIcon/heart_button.png" class="heart"/>
+		<h3>Vietnamese Golden Chicken Wings</h3>
+    	<p class="description">Give oven-roasted chiken wings authentic Vietnamese flavor with a tasty marinade of garli, lemon juie, soy sauce, sesame oil, and fish sauce.</p>
+    	<div>Nelson_Huynh</div>
+    	<div><img src="ButtonIcon/heart.jpg" />287</div>
+	</div>
+
+	<div class="recipe">
+		<img src="Gallery/spe_vietnamese_beef_pho.jpg" />
+    	<img src="ButtonIcon/heart_button.png" class="heart"/>
+		<h3>Vietnamese Beef Pho</h3>
+    	<p class="description">Paper-thin slices of top round or sirloin are ooked along with rie noodles in individual serving bowls into which hot beef broth fragrant with lemon grass, ginger, and cinnamon is poured.</p>
+    	<div>Recipe by Maryellen</div>
+    	<div><img src="ButtonIcon/heart.jpg" />50</div>
+	</div>
+    </div>
+    <!-- Column 2-->
+	<div class="content-column">
+	<div class="recipe">
+		<img src="Gallery/spe_nuoc_cham_vietnamese_dipping_sauce.jpg" />
+    	<img src="ButtonIcon/heart_button.png" class="heart"/>
+		<h3>Nuoc Cham (Vietnamese Dipping Sauce)</h3>
+    	<p class="description">This traditional Vietnamese dipping sauce is made with fish sauce, vinegar, lemon juice, garlic, and Thai chile peppers, the amounts of which can be adjusted to personal preference.</p>
+    	<div>Recipe by Calamity</div>
+    	<div><img src="ButtonIcon/heart.jpg" />253</div>
+	</div>
+
+	<div class="recipe">
+		<img src="Gallery/spe_chuck_and_heathers_panang_curry.jpg" />
+    	<img src="ButtonIcon/heart_button.png" class="heart"/>
+		<h3>Chuck and Heather's Panang Curry</h3>
+    	<p class="description">This simple, versatile Thai green curry works with beef, pork, hiken, or seafood. Add veggies of your choie to make it your own.</p>
+    	<div>Recipe by Chuk Mac</div>
+    	<div><img src="ButtonIcon/heart.jpg" />139</div>
+	</div>
+
+	<div class="recipe">
+		<img src="Gallery/spe_vietnamese_banh_mi.jpg" />
+    	<img src="ButtonIcon/heart_button.png" class="heart"/>
+		<h3>Banh Mi</h3>
+    	<p class="description">This version of the popular Vietnamese banh mi sandwih has sweet and tangy pickled vegetables and boiled chiken breast, served on a toasted French baguette.</p>
+    	<div>Recipe by metzstar</div>
+    	<div><img src="ButtonIcon/heart.jpg" />64</div>
+	</div>
+	</div>
+    <!--Column 3-->
+    <div class="content-column">
+	<div class="recipe" onclick="openNewPage('VietnameseSpringRollsWithDippingSauce')">
+		<img src="Gallery/spe_vietnamese_spring_rolls_with_dipping_sauce.jpg" />
+    	<img src="ButtonIcon/heart_button.png" class="heart"/>
+		<h3>Vietnamese Spring Rolls With Dipping Sauce</h3>
+    	<p class="description">These Vietnamese spring rolls are the perfect reipe for beating the heat. Poached shrimp, rice noodles, herbs, and letue are rolled into thin rice wrapper. Serve with the sweet and sour dipping sauec.</p>
+    	<div>Recipe by Allrecipes</div>
+    	<div><img src="ButtonIcon/heart.jpg" />896</div>
+	</div>
+
+	<div class="recipe">
+		<img src="Gallery/spe_pho_ga_soup.jpg" />
+    	<img src="ButtonIcon/heart_button.png" class="heart"/>
+		<h3>Pho Ga Soup</h3>
+    	<p class="description">Pho ga, a Vietnamese chiken noodle soup, is topped with bean sprouts, lime juie, and Sriracha sauce for a refreshing and spiy meal.</p>
+    	<div>Recipe by Cora</div>
+    	<div><img src="ButtonIcon/heart.jpg" />82</div>
+	</div>
+
+	<div class="recipe">
+		<img src="Gallery/spe_cha_gio_vietnamese_egg_rolls.jpg" />
+    	<img src="ButtonIcon/heart_button.png" class="heart"/>
+		<h3>Cha Gio Vietnamese Egg Rolls</h3>
+    	<p class="description">This traditional Vietnamese egg roll recipe makes a crispy, delicate hors d'oeuvre with flavors of pork, shrimp, shiitake, and fish sauce.</p>
+   		<div>Recipe by Joann</div>
+    	<div><img src="ButtonIcon/heart.jpg" />707</div>
+	</div>
+    </div>
+    <!-- end of column-->
+    </div>
+</div> <!-- close tag #body-->
+    <!--Footer section-->
+    <div id="footer">
+    	<div id="footer-top">
+        <nav class="menu-social">
+            <h3>MAMOO</h3>
+            <ul>
+            	<li><a href="https://plus.google.com/" target="_blank"><img src="SocialMediaIcons/PNG/Circle Black White/Google+.png" /></a></li>
+                <li><a href="#"><img src="SocialMediaIcons/PNG/Circle Black White/Facebook.png" /></a></li>
+                <li><a href="#"><img src="SocialMediaIcons/PNG/Circle Black White/Twitter.png" /></a></li>
+                <li><a href="#"><img src="SocialMediaIcons/PNG/Circle Black White/Tumblr.png" /></a></li>
+                <li><a href="#"><img src="SocialMediaIcons/PNG/Circle Black White/Pinterest.png" /></a></li>
+                <li><a href="#"><img src="SocialMediaIcons/PNG/Circle Black White/YouTube.png" /></a></li>
+                <li><a href="#"><img src="SocialMediaIcons/PNG/Circle Black White/Instagram.png" /></a></li>
+            </ul>
+        </nav>
+        <nav class="menu-link">
+            <h3>SITE MAP</h3>
+            <ul>
+            	<li><a>Vietnamese foods</a></li>
+                <li><a>Japanese foods</a></li>
+                <li><a>Healty foods</a></li>
+                <li><a>Drinks</a></li>
+                <li><a>Breakfast &amp; Brunch</a></li>
+                <li><a>Noodles</a></li>
+                <li><a>Soups &amp; Stews</a></li> 
+            </ul>
+        </nav>
+        <nav class="menu-link">
+            <h3>RELATED LINKS</h3>
+            <ul>
+            	<li><a>Foody.vn</a></li>
+                <li><a>Allrecipes.com</a></li>
+            </ul>
+        </nav>
+        <nav class="menu-link">
+            <h3>APPPLICATIONS</h3>
+            <ul>
+            	<li><a>Mamoo</a></li>
+                <li><a>Mamoon</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div id="footer-bot">
+        	<div>Keep your everyday dishes new<br />     
+        		<input id="email-box" type="search" placeholder="Your email" onclick="checkSearchBox()"/>
+            	<input id="email-submit" type="submit" value="GO"/>
+        	</div>
+      
+            <div>
+            	<img src="Logo/MamooLogowob.png" />
+            </div>
+            
+            <div>
+            	Deisgned by Nhat Ha<br />
+            	Front-end Web Development Final Project
+           	</div>
+        </div>
+    </div>
+    <!--Login&Signup Section-->
+<!--Login-->
+<form id="signin-form">
+	<div>Sign in</div>
+    <div id="login-box">
+    	<input id="signinUsername" type="text" placeholder="Username" required="required" onkeydown="signMeInWKey()"/><br />
+    	<input id="signinUserPassword" type="password" placeholder="Password" required="required" onkeydown="signMeInWKey()"/>
+    </div>
+    <input id="yes-button" type="button" value="Let Me In" onclick="signMeIn()" onkeydown="signMeInWKey()"/>
+    <div>Not a member? <a href="#" onclick="hideSigninBox(),showSignupBox()">Sign up now</a></div>
+</form>
+<!--signup-->
+<form id="signup-form">
+    <div>Sign up with email <span>Already a member? <a href="#" onclick="hideSignupBox(),showSigninBox()">Sign in</a></span></div>
+    <div id="input-content">
+        <input class="text" type="text" placeholder="Username (display to others)" id="signupUsername" required="required" onkeydown="signMeUpWKey()"/>
+    	<input class="text" type="email" placeholder="Email" id="signupUserEmail" required="required" onkeydown="signMeUpWKey()"/>
+    	<input class="text" type="password" placeholder="Password" id="signupUserPassword" required="required" onkeydown="signMeUpWKey()"/>
+        <input class="text" type="password" placeholder="Confirm Password" id="signupUserRepassword" required="required" onkeydown="signMeUpWKey()" />
+        
+        <div id="input-content-first-div">What will be sent to your Inbox?</div>
+        <input class="check-box" type="checkbox" /> &nbsp;Recipes Notes<br />
+        <input class="check-box" type="checkbox" /> &nbsp;Daily Menus<br />
+        <input class="check-box" type="checkbox" /> &nbsp;Expert Advice<br />
+        <div><input type="checkbox" id="userAgreement" required="required" onkeydown="signMeUpWKey()"/>By creating an account, you agree to our <a href="#">terms & conditions.</a></div>
+    </div>
+    <div><input id="finishbtn" type="button" value="Sign Me Up" onkeydown="signMeUpWKey()" onclick="signMeUp()" /></div>
+</form>
+
+<!-- Notification -->
+<div class="notification" id="my-alert">
+<span onclick="hideAlert()">&times;</span>
+  <h2 id="alert-name">Alert Name!</h2>
+  <p id="alert-content">Alert Content.</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+
+#signup-form{
+	width:500px;
+	height:630px;
+	border:;
+	position:fixed;
+	background-color:#FE9F99;
+	margin-left:32%;
+	opacity:0;
+	transition: all 1s;
+	z-index:6;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	top:-630px;
+}
+#input-content{
+	float:left;
+	width:80%;
+	background-color:white;
+	margin-left:10%;
+	padding-top:30px;
+	color:#999;
+}
+#signup-form .text{
+	font-size:17px;
+	width:80%;
+	height:40px;
+	padding-left:12px;
+	margin-left:10%;
+	box-sizing:border-box;
+	border:none;
+	background-color:#EBEBEB;
+}
+#input-content input:nth-child(2){
+	margin-top:10px;
+}
+#input-content input:nth-child(3){
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#input-content input:focus{
+	border-left:5px solid #6BCFB7;
+}
+#input-content-first-div{
+	color:#F77B7D;
+	padding:10px 40px 0px 40px;
+}
+#input-content>div:last-child{
+	color:#F77B7D;
+	padding:20px 40px 20px 40px;
+}
+#input-content>div>a{
+	text-decoration:none;
+	color:#228FEC;
+}
+#signup-form .check-box{
+	margin-left:10%;
+	box-sizing:border-box;
+	width:20px;
+	height:20px;
+	margin-top:10px;
+}
+#signup-form div:first-child{
+	font-size:24px;
+	padding:30px;
+	color:white;
+}
+#signup-form div:first-child span{
+	font-size:14px;
+	float:right;
+	padding:10px 10px 0 0;
+}
+#signup-form div:nth-child(2){
+	width:80%;
+	padding-top:30px;
+}
+#signup-form>div{
+	width:100%;
+	float:left;
+	border:;
+	padding:10px 0 10px 0;
+	box-sizing:border-box;
+}
+#finishbtn{
+	width:70%;
+	height:40px;
+	font-size:18px;
+	background-color:#F77B7D;
+	color:white;
+	border:none;
+	margin-left:15%;
+	margin-top:30px;
+}
+#finishbtn:hover{
+	background-color:#72CDBB;
+	color:white;
+	border:none;
+	cursor:pointer;
+}
+#signup-form a{
+	text-decoration:none;
+	color:white;
+}

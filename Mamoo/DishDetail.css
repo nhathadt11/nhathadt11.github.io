@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+
+.dish-detail{
+	border:;
+	background-color:white;
+	width:90%;
+	float:left;
+	padding:;
+	margin-top:20px;
+	margin-bottom:20px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+	
+}
+.dish-detail p, .dish-detail li{
+	color:#999;
+}
+.dish-description{
+	float:left;
+	width:300px;
+	border:;
+	margin: 20px;
+	position:relative;
+}
+.dish-description > img{
+	width:260px;
+	height:260px;
+	object-fit:cover;
+	float:left;
+	margin:20px;
+}
+.dish-description > img:first-child{
+	width:50px;
+	height:50px;
+	position:absolute;
+	top:20px;
+	right:20px;
+	opacity:0.5;
+}
+.dish-description > img:first-child:hover{
+	cursor:pointer;
+	opacity:1;
+}
+.dish-description > p, .dish-description h3{
+	margin:20px 20px 20px 20px;
+}
+.dish-description > span{
+	float:right;
+	margin-top:-50px;
+	vertical-align:central;
+}
+.dish-description > span >img{
+	width:20px;
+	height:20px;
+}
+.dish-nutrition{
+	float:left;
+	border:;
+	margin-top:40px;
+}
+.dish-nutrition td{
+	width:80px;
+	border-bottom:1px solid lightgrey;
+}
+.dish-ingredient{
+	width:350px;
+	float:left;
+	border-left:1px solid lightgrey;
+	border-right:1px solid lightgrey;
+	font-size:20px;
+	padding:0 20px 20px 20px;
+	margin:40px 20px 20px 20px;
+}
+.dish-direction{
+	float:left;
+	border-top:1px solid lightgrey;
+	font-size:20px;
+	margin:0 20px 20px 20px;
+	padding:0 30px 0 30px;
+}
+#dish-review{
+	float:left;
+	width:80%;
+	margin-left:10%;
+	margin-right:;
+	border-top:1px solid lightgrey;
+	padding:20px 0 20px 0;
+}
+.dish-review-box > input, .dish-review-box textarea{
+	margin:10px 10px 0 10px;
+	padding:5px;
+	font-size:16px;
+}
+.dish-review-box > textarea{
+	width:90%;
+	height:50px;
+	max-width:90%;
+	max-height:200px;
+}
+.dish-review-box > input[type=button]{
+	width:100px;
+	height:40px;
+	background-color:#F06263;
+	color:white;
+	margin-bottom:10px;
+	border:none;
+}
+.dish-review-box > input[type=button]:hover{
+	background-color:;
+	cursor:pointer;
+}
+.dish-review-box{
+	clear:left;
+	border:1px solid lightgrey;
+	width:80%;
+	margin-left:10%;
+	margin-bottom:20px;
+}

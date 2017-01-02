@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+
+.news{
+	float:left;
+	width:80%;
+	padding:20px;
+	border:;
+	box-sizing:border-box;
+	position:relative;
+	margin-top:5px;
+	margin-bottom:5px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+	transition: transform 0.5s;
+	background-color:white;
+}
+.news:first-child{
+	margin-top:20px;
+}
+.news:last-child{
+	margin-bottom:20px;
+}
+.news:hover{
+	cursor:pointer;
+	transform: scale(1.05,1.05);
+	box-shadow: 0px 12px 20px 0px rgba(0,0,0,0.7);
+}
+.news-description{
+	width:50%;
+	float:right;
+}
+.news > img{
+	object-fit:cover;
+	width:400px;
+	height:300px;
+
+}
+.news h3{
+	clear:both;
+}
+.news > p{
+	clear:both;
+	color:#999;
+	font-size:14px;
+}
+.news-description > input[type=button]{
+	border:1px solid red;
+	color:red;
+	padding:10px 20px 10px 20px;
+	background-color:white;
+}
+.news-description > input[type=button]:hover{
+	cursor:pointer;
+}

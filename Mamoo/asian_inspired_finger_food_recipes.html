@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="DishDetail.css">
+<title>Untitled Document</title>
+<style>
+*{
+	font-family: 'Raleway';
+}
+.news-title{
+	float:left;
+	width:80%;
+	padding:20px;
+	border:;
+	box-sizing:border-box;
+	position:relative;
+	margin-top:5px;
+	margin-bottom:5px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+	transition: transform 0.5s;
+	background-color:white;
+}
+.news-title > h1{
+	text-align:center;
+}
+.news-title > p{
+	margin:0 7% 0 7%;
+}
+.news-title > img{
+	width:600px;
+	display:block;
+	object-fit:cover;
+	margin:0 auto;
+	
+}
+#back-to-top-button{
+	width:50px;
+	height:50px;
+	position:fixed;
+	right:5%;
+	bottom:100px;
+	display:none;
+}
+</style>
+<script>
+function showBackToTopButton(){
+	var elmnt = document.getElementById("main-body");
+    var x = elmnt.scrollLeft;
+    var y = elmnt.scrollTop;
+	if (y >= 100) document.getElementById('back-to-top-button').style.display = "inline-block";
+		else document.getElementById('back-to-top-button').style.display = "none";
+    document.getElementById ("demo").innerHTML = "Horizontally: " + x + "px<br>Vertically: " + y + "px";
+}
+</script>
+</head>
+
+<body id="main-body" onscroll="showBackToTopButton()">
+<div class="news-title">
+	<h1>ASIAN-INSPIRED FINGER FOOD RECIPES</h1>
+    <p>From Vietnamese spring rolls to Japanese maki to Indonesian satay, east and southeast Asia provides tons of inspiration for finger-friendly snacks. At your next party, make sure your guests are well-fed with these Asian-inspired finger food recipes.</p>
+	<p>Fried chicken wings are a party staple. Buffalo wings dominate in America, but across Asia you'll find all sorts of variations. Our Japanese-style chicken wings are spiced with sansho, the Japanese equivalent of Sichuan pepper. Potato starch gives them a ridiculously crispy crust. Our Indonesian chicken wings are cooked in coconut water before frying, giving them a subtle sweetness. For saucy chicken reminiscent of Buffalo wings, try making a Thai-inspired hot sauce with ketchup, Sriracha, and soy sauce.</p><br />
+    <img src="Gallery/news_asian_inspired_finger_food_recipes(1).jpg" /><br /><br />
+	<p>Fritters are another fried treat perfect for parties. Combining flavors from China and the American South, tofu wanzi are fritters made of tofu, bacon, scallions, and panko bread crumbs. Perkedel kenteng are mashed potato fritters hailing from Padang, Indonesia. They’re simply flavored with nutmeg and shallots before being dipped in egg and fried until crisp.</p><br />
+    <img src="Gallery/news_asian_inspired_finger_food_recipes(2).jpg" /><br /><br />
+	<p>Satay is a classic Javanese dish of skewered and grilled meat. It's endlessly variable—a typical Indonesian version can be made with lamb in a sweet-and-sour marinade, but you'll find different recipes across Southeast Asia. Thai muu satay use pork marinated with sweet coconut milk, citrusy lemongrass, and pungent galangal. Satay udang is a Singapore-style shrimp satay with lime juice, brown sugar, and ground macadamia nuts.</p>
+	<p>For a full collection of multicultural party snack, check out our favorite Asian-inspired finger food recipes.</p>
+    
+    <h2 style="clear:both;width:80%;margin-left:10%;">Comments</h2>
+    <div id="dish-review">
+    </div>
+    
+    <div class="dish-review-box">
+    	<input type="text" placeholder="Your name" id="comment-username" /><br />
+        <textarea placeholder="Your comment..." id="comment-content" onkeydown="submitCommentWKey()"></textarea><br />
+        <input type="button" value="Okay" id="submit-comment" onclick="submitComment()"/>
+    </div>
+</div>
+<p id="demo" style="position:fixed;right:5%;bottom:200px;"></p>
+<img src="ButtonIcon/back_to_top.png" id="back-to-top-button"/>
+</body>
+</html>

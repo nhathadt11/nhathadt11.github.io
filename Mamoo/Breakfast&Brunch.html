@@ -1,0 +1,346 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MAMOO</title>
+<link rel="shortcut icon" href="Logo/TitleBarMamoo.png" type="image/png">
+<link href="https://fonts.googleapis.com/css?family=Raleway&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="Header.css">
+<link rel="stylesheet" type="text/css" href="Specialty.css">
+<link rel="stylesheet" type="text/css" href="Footer.css">
+<link rel="stylesheet" type="text/css" href="Signin.css">
+<link rel="stylesheet" type="text/css" href="Signup.css">
+<link rel="stylesheet" type="text/css" href="MyNotifications.css">
+<link rel="stylesheet" type="text/css" href="BrowseMenu.css">
+<link rel="stylesheet" type="text/css" href="DishDetail.css">
+<style>
+*{
+	font-family:Raleway, Helvetica, sans-serif;
+}
+div{
+	box-sizing:border-box;
+}
+#content-container{
+	float:left;
+	border:;
+	position:relative;
+	margin-left:10%;
+}
+.content-column{
+	float:left;
+	width:300px;
+	border:;
+	margin:20px;
+}
+</style>
+<script src="Specialty.js"></script>
+<script src="Header.js"></script>
+<script src="Signin.js"></script>
+<script src="Signup.js"></script>
+<script src="CheckValidation.js"></script>
+<script src="Signup_signin.js"></script>
+<script src="MyNotifications.js"></script>
+<script src="BrowseMenu.js"></script>
+<script>
+function resizeIframe(x) {
+	//alert(x.innerHeight);
+	  
+	//var inf=document.getElementsById('myframe').contentDocument;
+	//alert(inf);
+	//alert(inf.contentWindow.document.documentElement.clientHeight);
+	//inf.height = inf.contentWindow.document.body.scrollHeight + "px";
+	//alert(inf.scrollHeight);
+}
+function chinh(){
+  	
+	var tag=document.getElementById("id_myframe");
+	alert(tag.height);
+	//var w=tag.contentWindow.document.documentElement.scrollHeight;
+	//if(w=="undefine" || w==null)
+	var   w=tag.contentDocument.documentElement.scrollHeight;
+	alert(w);
+	tag.height=w; 
+}
+
+</script> 
+</head>
+
+<body id="main-body" onload="playGallery(), checkSignIn()" onscroll="showBackToTopButton()">
+<div id="header">
+	<div id="header-left"><img id="logo" src="Logo/MamooLogo2wob.png" onclick="openNewPage('Home')"/></div>
+    
+    <div id="header-right-top">
+    	<a style="margin-right:40px" onclick="showSignupBox()" id="header-signup">Sign up</a>
+        <a onclick="showSigninBox()" id="header-signin">Sign in</a>
+    </div>
+    
+    <div id="header-right-bot">
+    	<div id="nav">
+    		<div>
+            	<div class="menu" onclick="openNewPage('Home')">NEWS</div>
+                <div class="menu-content">
+                	<!---->
+                </div>
+            </div>
+            <div>
+            	<div class="menu">BROWSE</div>
+                <div class="menu-content">
+                	<a>Appetizers</a>
+                    <a href="Breakfast&Brunch.html" target="_self">Breakfast &amp; Brunch</a>
+                    <a>Desserts</a>
+                    <a>Dinner</a>
+                    <a>Drinks</a>
+                    <a>Entrées</a>
+                    <a>Fruits &amp; Vegestables</a>
+                    <a>Lunch</a>
+                    <a>Meat & Poultry</a>
+                    <a>Noodles</a>
+                    <a>Salads</a>
+                    <a>Seafood</a>
+                    <a>Soups &amp; Stews</a>
+                </div>
+            </div>
+            <div>
+            	<div class="menu">SPECIALTY</div>
+                <div class="menu-content">
+                	<a>Chinese</a>
+                    <a>Korean</a>
+                    <a href="JapaneseFoods.html" target="_self">Japanese</a>
+                    <a href="VietnameseFoods.html" target="_self">Vietnamese</a>
+                </div>
+            </div>
+            <div>
+            	<div class="menu" onclick="openNewPage('HealthyFoods')">HEALTHY FOODS</div>
+                <div class="menu-content">
+                	<!---->
+                </div>
+            </div>
+       	</div>
+        <div id="search-box">
+        	<input id="search-box-input" type="search" placeholder=" Find a Recipe" onclick="checkSearchBox()"/><img src="Searchwob.png" />
+        </div>
+    </div>
+</div>
+
+<div id="body">
+	<div id="specialty">
+    		<img id="img1" class="imgShow" src="Gallery/1.jpg" />
+        	<img id="img2" class="imgShow" src="Gallery/2.jpg" />
+            <img id="img3" class="imgShow" src="Gallery/3.jpg" />
+            <img id="img4" class="imgShow" src="Gallery/4.jpg" />
+            <div id="prev"><img src="ButtonIcon/icon-arrow-back-128.png" onclick="backImage()"/></div>
+            <div id="next"><img src="ButtonIcon/icon-arrow-next-128.png" onclick="nextImage()"/></div>
+            <div class="thumbnail" id="thumb1">
+            	<h2>Pho</h2>
+            	<p>Vietnamese noodle soup consisting of broth, linguine-shaped rice noodles called bánh phở, a few herbs, and meat, primarily served with either beef or chicken.
+                </p>
+            </div>
+            <div class="thumbnail" id="thumb2">
+            	<h2>Strawberry Oatmeal Breakfast Smoothie</h2>
+                <p>This is a fast vegan smoothie with a deep pink color and a rich, creamy texture. VERY filling, and perfect for people in a rush breakfast when it's this fast to make! I use vitamin fortified soy milk.
+                </p>
+            </div>
+            <div class="thumbnail" id="thumb3">
+            	<h2>Rice Dumplings/Zong</h2>
+            	<p>
+                To make zong, you wrap sticky rice in bamboo leaves and tie it into a triangular shape. It is cooked by steaming or boiling in hot water. Zong is normally eaten by dipping in sugar.
+            	</p>
+            </div>
+            <div class="thumbnail" id="thumb4">
+            	<h2>Spicy Queso Fresco Guacamole</h2>
+            	<p>
+                Happy Cinco de Mayo everyone!! And if you plan to have a guacamole tasting par-tay like me…. well, here are a few more guacamole recipes to wow your guests!
+            	</p>
+            </div>
+            <div id="todaysRecipe">Today's Recipes</div>
+    </div>
+    <!--Loaded content-->
+<div id="content-container">
+	<!-- First column-->
+    <div class="content-column">
+    <div class="recipe">
+		<img src="Gallery/brf_1.jpg" />
+    	<img src="ButtonIcon/heart_button.png" class="heart"/>
+		<h3>Cheesy Ham and Hash Brown</h3>
+    	<p class="description">This family-friendly breakfast casserole is made with hash brown potados and ham in a creamy sauce for a yummy lazy day breakfast</p>
+    	<div>Recipe by POOBOO</div>
+    	<div><img src="ButtonIcon/heart.jpg" />12</div>
+	</div>
+
+	<div class="recipe">
+		<img src="Gallery/brf_2.jpg" />
+    	<img src="ButtonIcon/heart_button.png" class="heart"/>
+		<h3>Anthetic Huevos Rancheros</h3>
+    	<p class="description">This is an easy to make tostada-type breakfast that will definitely satisfy your hunger until lunch</p>
+    	<div>Recipe by Wineaux</div>
+    	<div><img src="ButtonIcon/heart.jpg" />302</div>
+	</div>
+
+	<div class="recipe">
+		<img src="Gallery/brf_classic_waffles.jpg" />
+    	<img src="ButtonIcon/heart_button.png" class="heart"/>
+		<h3>Classic Waffles</h3>
+    	<p class="description">A classic waffle recipe includes basic ingredients you probably already have on hand, creating a perfectly crisp breafast iem</p>
+    	<div>Recipe by Megan</div>
+    	<div><img src="ButtonIcon/heart.jpg" />100</div>
+	</div>
+    </div>
+    <!-- Column 2-->
+	<div class="content-column">
+	<div class="recipe" onclick="openNewPage('OvernightBlueberryFrenchToast')">
+		<img src="Gallery/brf_overnight_blueberry_french_toast.jpg" />
+    	<img src="ButtonIcon/heart_button.png" class="heart"/>
+		<h3>Overnight Blueberry French Toast</h3>
+    	<p class="description">This is a very unique breakfast dish. Good for any holiday breakfast or brunch, it's filled with the fresh taste of blueberries, and covered with a rich blueberry sauce to make it a one of a kind</p>
+    	<div>Recipe by KARAN1946</div>
+    	<div><img src="ButtonIcon/heart.jpg" />215</div>
+	</div>
+
+	<div class="recipe">
+		<img src="Gallery/brf_fluffy_pancakes.jpg" />
+    	<img src="ButtonIcon/heart_button.png" class="heart"/>
+		<h3>Fluffy Pancakes</h3>
+    	<p class="description">Tall, fluffy pancakes make the best breakfast, especially when there's plenty of buffer and syrup. Make it extra special with berries and whipped cream!</p>
+    	<div>Recipe by kris</div>
+    	<div><img src="ButtonIcon/heart.jpg" />145</div>
+	</div>
+
+	<div class="recipe">
+		<img src="Gallery/brf_clone_of_a_cinnabon.jpg" />
+    	<img src="ButtonIcon/heart_button.png" class="heart"/>
+		<h3>Clone of a Cinnabon</h3>
+    	<p class="description">Save yourself a lot of money by making your own homemade cinnamon rolls! The dough is made in the bread machine and everything else is done by hand.</p>
+    	<div>Recipe by Marsha Fernadez</div>
+    	<div><img src="ButtonIcon/heart.jpg" />418</div>
+	</div>
+	</div>
+    <!--Column 3-->
+    <div class="content-column">
+	<div class="recipe">
+		<img src="Gallery/brf_chef_johns_baked_eggs.jpg" />
+    	<img src="ButtonIcon/heart_button.png" class="heart"/>
+		<h3>Chef John's Baked Eggs</h3>
+    	<p class="description">Eggs are baked in a spicy marinara sauce and topped with cream and Parmigiano-Reggiano, for a rich and creamy brunch dish.</p>
+    	<div>Recipe by Chef John</div>
+    	<div><img src="ButtonIcon/heart.jpg" />289</div>
+	</div>
+
+	<div class="recipe">
+		<img src="Gallery/brf_baked_brunch_omelet.jpg" />
+    	<img src="ButtonIcon/heart_button.png" class="heart"/>
+		<h3>Baked Brunch Omelet</h3>
+    	<p class="description">A baked egg casserole with cheese, ham and green onions.</p>
+    	<div>Recipe by WALLEN</div>
+    	<div><img src="ButtonIcon/heart.jpg" />28</div>
+	</div>
+
+	<div class="recipe">
+		<img src="Gallery/brf_orange_pecan_french_toast.jpg" />
+    	<img src="ButtonIcon/heart_button.png" class="heart"/>
+		<h3>Orange Pecan French Toast</h3>
+    	<p class="description">A simple baked French toast that won't have you slaving over a hot stove. An orange batter and caramel pecan coating make this baked French toast so delicious, you won't need any syrup.</p>
+   		<div>Recipe by SR</div>
+    	<div><img src="ButtonIcon/heart.jpg" />258</div>
+	</div>
+    </div>
+    <!-- end of column-->
+</div>
+</div> <!-- close tag #body-->
+    <!--Footer section-->
+    <div id="footer">
+    	<div id="footer-top">
+        <nav class="menu-social">
+            <h3>MAMOO</h3>
+            <ul>
+            	<li><a href="https://plus.google.com/" target="_blank"><img src="SocialMediaIcons/PNG/Circle Black White/Google+.png" /></a></li>
+                <li><a href="#"><img src="SocialMediaIcons/PNG/Circle Black White/Facebook.png" /></a></li>
+                <li><a href="#"><img src="SocialMediaIcons/PNG/Circle Black White/Twitter.png" /></a></li>
+                <li><a href="#"><img src="SocialMediaIcons/PNG/Circle Black White/Tumblr.png" /></a></li>
+                <li><a href="#"><img src="SocialMediaIcons/PNG/Circle Black White/Pinterest.png" /></a></li>
+                <li><a href="#"><img src="SocialMediaIcons/PNG/Circle Black White/YouTube.png" /></a></li>
+                <li><a href="#"><img src="SocialMediaIcons/PNG/Circle Black White/Instagram.png" /></a></li>
+            </ul>
+        </nav>
+        <nav class="menu-link">
+            <h3>SITE MAP</h3>
+            <ul>
+            	<li><a>Vietnamese foods</a></li>
+                <li><a>Japanese foods</a></li>
+                <li><a>Healty foods</a></li>
+                <li><a>Drinks</a></li>
+                <li><a>Breakfast &amp; Brunch</a></li>
+                <li><a>Noodles</a></li>
+                <li><a>Soups &amp; Stews</a></li> 
+            </ul>
+        </nav>
+        <nav class="menu-link">
+            <h3>RELATED LINKS</h3>
+            <ul>
+            	<li><a>Foody.vn</a></li>
+                <li><a>Allrecipes.com</a></li>
+            </ul>
+        </nav>
+        <nav class="menu-link">
+            <h3>APPPLICATIONS</h3>
+            <ul>
+            	<li><a>Mamoo</a></li>
+                <li><a>Mamoon</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div id="footer-bot">
+        	<div>Keep your everyday dishes new<br />     
+        		<input id="email-box" type="search" placeholder="Your email" onclick="checkSearchBox()"/>
+            	<input id="email-submit" type="submit" value="GO"/>
+        	</div>
+      
+            <div>
+            	<img src="Logo/MamooLogowob.png" />
+            </div>
+            
+            <div>
+            	Deisgned by Nhat Ha<br />
+            	Front-end Web Development Final Project
+           	</div>
+        </div>
+    </div>
+    <!--Login&Signup Section-->
+<!--Login-->
+<form id="signin-form">
+	<div>Sign in</div>
+    <div id="login-box">
+    	<input id="signinUsername" type="text" placeholder="Username" required="required" onkeydown="signMeInWKey()"/><br />
+    	<input id="signinUserPassword" type="password" placeholder="Password" required="required" onkeydown="signMeInWKey()"/>
+    </div>
+    <input id="yes-button" type="button" value="Let Me In" onclick="signMeIn()" onkeydown="signMeInWKey()"/>
+    <div>Not a member? <a href="#" onclick="hideSigninBox(),showSignupBox()">Sign up now</a></div>
+</form>
+<!--signup-->
+<form id="signup-form">
+    <div>Sign up with email <span>Already a member? <a href="#" onclick="hideSignupBox(),showSigninBox()">Sign in</a></span></div>
+    <div id="input-content">
+        <input class="text" type="text" placeholder="Username (display to others)" id="signupUsername" required="required" onkeydown="signMeUpWKey()"/>
+    	<input class="text" type="email" placeholder="Email" id="signupUserEmail" required="required" onkeydown="signMeUpWKey()"/>
+    	<input class="text" type="password" placeholder="Password" id="signupUserPassword" required="required" onkeydown="signMeUpWKey()"/>
+        <input class="text" type="password" placeholder="Confirm Password" id="signupUserRepassword" required="required" onkeydown="signMeUpWKey()" />
+        
+        <div id="input-content-first-div">What will be sent to your Inbox?</div>
+        <input class="check-box" type="checkbox" /> &nbsp;Recipes Notes<br />
+        <input class="check-box" type="checkbox" /> &nbsp;Daily Menus<br />
+        <input class="check-box" type="checkbox" /> &nbsp;Expert Advice<br />
+        <div><input type="checkbox" id="userAgreement" required="required" onkeydown="signMeUpWKey()"/>By creating an account, you agree to our <a href="#">terms & conditions.</a></div>
+    </div>
+    <div><input id="finishbtn" type="button" value="Sign Me Up" onclick="signMeUp()" /></div>
+</form>
+
+<!-- Notification -->
+<div class="notification" id="my-alert">
+<span onclick="hideAlert()">&times;</span>
+  <h2 id="alert-name">Alert Name!</h2>
+  <p id="alert-content">Alert Content.</p>
+</div>
+
+<!-- Back-to-top button -->
+<img src="ButtonIcon/back_to_top.png" id="back-to-top-button" onclick="backToTop()"/>
+</body>
+</html>

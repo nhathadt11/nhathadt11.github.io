@@ -1,0 +1,321 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MAMOO</title>
+<link href="https://fonts.googleapis.com/css?family=Raleway&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="Logo/TitleBarMamoo.png" type="image/png">
+<link rel="stylesheet" type="text/css" href="Header.css">
+<link rel="stylesheet" type="text/css" href="Specialty.css">
+<link rel="stylesheet" type="text/css" href="Footer.css">
+<link rel="stylesheet" type="text/css" href="Signin.css">
+<link rel="stylesheet" type="text/css" href="Signup.css">
+<link rel="stylesheet" type="text/css" href="MyNotifications.css">
+<link rel="stylesheet" type="text/css" href="BrowseMenu.css">
+<link rel="stylesheet" type="text/css" href="DishDetail.css">
+<style>
+*{
+	font-family:Raleway, Helvetica, sans-serif;
+}
+div{
+	box-sizing:border-box;
+}
+#content-container{
+
+	float:left;
+	border:;
+	position:relative;
+	margin-left:10%;
+}
+.content-column{
+	float:left;
+	width:300px;
+	border:;
+	margin:20px;
+}
+</style>
+<script src="Specialty.js"></script>
+<script src="Header.js"></script>
+<script src="Signin.js"></script>
+<script src="Signup.js"></script>
+<script src="CheckValidation.js"></script>
+<script src="Signup_signin.js"></script>
+<script src="MyNotifications.js"></script>
+<script src="BrowseMenu.js"></script>
+<script>
+function resizeIframe(x) {
+	//alert(x.innerHeight);
+	  
+	//var inf=document.getElementsById('myframe').contentDocument;
+	//alert(inf);
+	//alert(inf.contentWindow.document.documentElement.clientHeight);
+	//inf.height = inf.contentWindow.document.body.scrollHeight + "px";
+	//alert(inf.scrollHeight);
+}
+function chinh(){
+  	
+	var tag=document.getElementById("id_myframe");
+	alert(tag.height);
+	var w=tag.contentWindow.document.documentElement.scrollHeight;
+	if(w=="undefine" || w==null)
+		w=tag.contentDocument.documentElement.scrollHeight;
+	alert(w);
+	tag.height=w; 
+}
+
+</script> 
+</head>
+
+<body id="main-body" onload="playGallery(), checkSignIn(), refreshReviewBox()" onscroll="showBackToTopButton()">
+<div id="header">
+	<div id="header-left"><img id="logo" src="Logo/MamooLogo2wob.png" onclick="openNewPage('Home')"/></div>
+    
+    <div id="header-right-top">
+    	<a style="margin-right:40px" onclick="showSignupBox()" id="header-signup">Sign up</a>
+        <a onclick="showSigninBox()" id="header-signin">Sign in</a>
+    </div>
+    
+    <div id="header-right-bot">
+    	<div id="nav">
+    		<div>
+            	<div class="menu" onclick="openNewPage('Home')">NEWS</div>
+                <div class="menu-content">
+                	<!---->
+                </div>
+            </div>
+            <div>
+            	<div class="menu">BROWSE</div>
+                <div class="menu-content">
+                	<a>Appetizers</a>
+                    <a href="Breakfast&Brunch.html" target="_self">Breakfast &amp; Brunch</a>
+                    <a>Desserts</a>
+                    <a>Dinner</a>
+                    <a>Drinks</a>
+                    <a>Entrées</a>
+                    <a>Fruits &amp; Vegestables</a>
+                    <a>Lunch</a>
+                    <a>Meat & Poultry</a>
+                    <a>Noodles</a>
+                    <a>Salads</a>
+                    <a>Seafood</a>
+                    <a>Soups &amp; Stews</a>
+                </div>
+            </div>
+            <div>
+            	<div class="menu">SPECIALTY</div>
+                <div class="menu-content">
+                	<a>Chinese</a>
+                    <a>Korean</a>
+                    <a href="JapaneseFoods.html" target="_self">Japanese</a>
+                    <a href="VietnameseFoods.html" target="_self" onclick="chinh()">Vietnamese</a>
+                </div>
+            </div>
+            <div>
+            	<div class="menu" onclick="openNewPage('HealthyFoods')">HEALTHY FOODS</div>
+                <div class="menu-content">
+                	<!---->
+                </div>
+            </div>
+       	</div>
+        <div id="search-box">
+        	<input id="search-box-input" type="search" placeholder=" Find a Recipe" onclick="checkSearchBox()"/><img src="Searchwob.png" />
+        </div>
+    </div>
+</div>
+
+<div id="body">
+	<div id="specialty">
+    		<img id="img1" class="imgShow" src="Gallery/1.jpg" />
+        	<img id="img2" class="imgShow" src="Gallery/2.jpg" />
+            <img id="img3" class="imgShow" src="Gallery/3.jpg" />
+            <img id="img4" class="imgShow" src="Gallery/4.jpg" />
+            <div id="prev"><img src="ButtonIcon/icon-arrow-back-128.png" onclick="backImage()"/></div>
+            <div id="next"><img src="ButtonIcon/icon-arrow-next-128.png" onclick="nextImage()"/></div>
+            <div class="thumbnail" id="thumb1">
+            	<h2>Pho</h2>
+            	<p>Vietnamese noodle soup consisting of broth, linguine-shaped rice noodles called bánh phở, a few herbs, and meat, primarily served with either beef or chicken.
+                </p>
+            </div>
+            <div class="thumbnail" id="thumb2">
+            	<h2>Strawberry Oatmeal Breakfast Smoothie</h2>
+            	<p>
+            This is a fast vegan smoothie with a deep pink color and a rich, creamy texture. VERY filling, and perfect for people in a rush breakfast when it's this fast to make! I use vitamin fortified soy milk.
+            	</p>
+            </div>
+            <div class="thumbnail" id="thumb3">
+            	<h2>Rice Dumplings/Zong</h2>
+            	<p>
+                To make zong, you wrap sticky rice in bamboo leaves and tie it into a triangular shape. It is cooked by steaming or boiling in hot water. Zong is normally eaten by dipping in sugar.
+            	</p>
+            </div>
+            <div class="thumbnail" id="thumb4">
+            	<h2>Spicy Queso Fresco Guacamole</h2>
+            	<p>
+                Happy Cinco de Mayo everyone!! And if you plan to have a guacamole tasting par-tay like me…. well, here are a few more guacamole recipes to wow your guests!
+            	</p>
+            </div>
+            <div id="todaysRecipe">Today's Recipes</div>
+    </div>
+    <!--Frame-->
+    <div id="content-container">
+    	<div class="dish-detail">
+	<div class="dish-description">
+    	<img src="ButtonIcon/heart_button.png"/>
+    	<img src="Gallery/spe_vietnamese_spring_rolls_with_dipping_sauce.jpg" />
+    	<h3>Vietnamese Spring Rolls With Dipping Sauce</h3>
+        <p>These Vietnamese spring rolls are the perfect recipe for beating the heat. Poached shrimp, rice noodles, herbs, and lettuce are rolled into a thin rice wrapper. Serve with the sweet and sour dipping sauce.</p>
+        <p>Recipe by Allrecipe</p>
+        <span><img src="ButtonIcon/heart_button.png" />215</span>
+    </div> 
+	<div class="dish-ingredient">
+ 		<h3>Ingredients</h3>   	
+        <ul>
+    		<li>1/4 cup white vinegar</li>
+        	<li>1/4 cup fish sauce</li>
+        	<li>2 tablespoons white sugar</li>
+        	<li>2 tablespoons lime juice</li>
+        	<li>1 clove garlic, minced</li>
+        	<li>1/4 teaspoon red pepper flakes</li>
+        	<li>2 ounces rice vermicelli</li>
+        	<li>8 large shrimp, peeled and deveined</li>
+        	<li>4 rice wrappers (8.5 inch diameter)</li>
+        	<li>2 leaves lettuce, chopped</li>
+        	<li>3 tablespoons finely chopped fresh mint leaves</li>
+        	<li>3 tablespoons finely chopped cilantro</li>
+            <li>4 teaspoons finely chopped Thai basil</li>
+    	</ul>
+   	</div>
+    
+    <div class="dish-nutrition">
+    	<h3>Nutritional Information</h3>
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Amount per serving (4 total)</p>
+    	<table>
+        	<tr><td>Calories</td><td>137 cal</td><td>7%</td></tr>	
+            <tr><td>Fat</td><td>0.7 g</td><td>1%</td></tr>
+            <tr><td>Carbs</td><td>22.5 g</td><td>7%</td></tr>
+            <tr><td>Protein</td><td>10.1 g</td><td>20%</td></tr>
+            <tr><td>Cholesterol</td><td>64 mg</td><td>21%</td></tr>
+            <tr><td>Sodium</td><td>1170 mg</td><td>47%</td></tr>
+        </table>
+    </div>
+    
+    <div class="dish-direction">
+    	<h3>Instructions</h3>
+        <ol>
+        	<li>Whisk vinegar, fish sauce, sugar, lime juice, garlic, and red pepper flakes together in a small bowl. Set the dipping sauce aside.</li>
+        	<li>Fill a large bowl with room temperature water. Add rice vermicelli and soak for 1 hour.</li>
+        	<li>Bring a large pot of water to a boil. Drop in shrimp and cook until curled and pink, about 1 minute. Remove the shrimp and drain. Slice each shrimp in half lengthwise. Transfer rice vermicelli noodles to the pot of boiling water and cook for 1 minute. Remove and drain in a colander. Immediately rinse the vermicelli with cold water, stirring to separate the noodles.</li>
+        	<li>To assemble the rolls, dip 1 rice wrapper in a large bowl of room temperature water for a few seconds to soften. Place wrapper on a work surface and top with 4 shrimp halves, 1/4 of the chopped lettuce, 1/2 ounce vermicelli, and 1/4 each of the mint, cilantro, and Thai basil. Fold right and left edges of the wrapper over the ends of the filling and roll up the spring roll. Repeat with remaining wrappers and ingredients. Cut each roll in half and serve with dipping sauce.</li>
+    	</ol>
+    </div>
+    
+    <h2 style="clear:both;width:80%;margin-left:10%;">Reviews</h2>
+    <div id="dish-review">
+    </div>
+    
+    <div class="dish-review-box">
+    	<input type="text" placeholder="Your name" id="comment-username" /><br />
+        <textarea placeholder="Your comment..." id="comment-content" onkeydown="submitCommentWKey()"></textarea><br />
+        <input type="button" value="Okay" id="submit-comment" onclick="submitComment()"/>
+    </div>
+</div>
+    </div>
+</div>
+    <!--Footer section-->
+    <div id="footer">
+    	<div id="footer-top">
+        <nav class="menu-social">
+            <h3>MAMOO</h3>
+            <ul>
+            	<li><a href="https://plus.google.com/" target="_blank"><img src="SocialMediaIcons/PNG/Circle Black White/Google+.png" /></a></li>
+                <li><a href="#"><img src="SocialMediaIcons/PNG/Circle Black White/Facebook.png" /></a></li>
+                <li><a href="#"><img src="SocialMediaIcons/PNG/Circle Black White/Twitter.png" /></a></li>
+                <li><a href="#"><img src="SocialMediaIcons/PNG/Circle Black White/Tumblr.png" /></a></li>
+                <li><a href="#"><img src="SocialMediaIcons/PNG/Circle Black White/Pinterest.png" /></a></li>
+                <li><a href="#"><img src="SocialMediaIcons/PNG/Circle Black White/YouTube.png" /></a></li>
+                <li><a href="#"><img src="SocialMediaIcons/PNG/Circle Black White/Instagram.png" /></a></li>
+            </ul>
+        </nav>
+        <nav class="menu-link">
+            <h3>SITE MAP</h3>
+            <ul>
+            	<li><a>Vietnamese foods</a></li>
+                <li><a>Japanese foods</a></li>
+                <li><a>Healty foods</a></li>
+                <li><a>Drinks</a></li>
+                <li><a>Breakfast &amp; Brunch</a></li>
+                <li><a>Noodles</a></li>
+                <li><a>Soups &amp; Stews</a></li> 
+            </ul>
+        </nav>
+        <nav class="menu-link">
+            <h3>RELATED LINKS</h3>
+            <ul>
+            	<li><a>Foody.vn</a></li>
+                <li><a>Allrecipes.com</a></li>
+            </ul>
+        </nav>
+        <nav class="menu-link">
+            <h3>APPPLICATIONS</h3>
+            <ul>
+            	<li><a>Mamoo</a></li>
+                <li><a>Mamoon</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div id="footer-bot">
+        	<div>Keep your everyday dishes new<br />     
+        		<input id="email-box" type="search" placeholder="Your email" onclick="checkSearchBox()"/>
+            	<input id="email-submit" type="submit" value="GO"/>
+        	</div>
+      
+            <div>
+            	<img src="Logo/MamooLogowob.png" />
+            </div>
+            
+            <div>
+            	Deisgned by Nhat Ha<br />
+            	Front-end Web Development Final Project
+           	</div>
+        </div>
+    </div>
+    <!--Login&Signup Section-->
+<!--Signin-->
+<form id="signin-form" method="post">
+	<div>Sign in</div>
+    <div id="login-box">
+    	<input id="signinUsername" type="text" name="username" placeholder="Username" required="required" onkeydown="signMeInWKey()"/><br />
+    	<input id="signinUserPassword" type="password" name="password" placeholder="Password" required="required" onkeydown="signMeInWKey()"/>
+    </div>
+    <input id="yes-button" type="button" value="Let Me In" onclick="signMeIn()" />
+    <div>Not a member? <a href="#" onclick="hideSigninBox(),showSignupBox()">Sign up now</a></div>
+</form>
+<!--Signup-->
+<form id="signup-form">
+    <div>Sign up with email <span>Already a member? <a href="#" onclick="hideSignupBox(),showSigninBox()">Sign in</a></span></div>
+    <div id="input-content">
+        <input class="text" type="text" placeholder="Username (display to others)" id="signupUsername" required="required" onkeydown="signMeUpWKey()"/>
+    	<input class="text" type="email" placeholder="Email" id="signupUserEmail" required="required" onkeydown="signMeUpWKey()"/>
+    	<input class="text" type="password" placeholder="Password" id="signupUserPassword" required="required" onkeydown="signMeUpWKey()"/>
+        <input class="text" type="password" placeholder="Confirm Password" id="signupUserRepassword" required="required" onkeydown="signMeUpWKey()" />
+        
+        <div id="input-content-first-div">What will be sent to your Inbox?</div>
+        <input class="check-box" type="checkbox" /> &nbsp;Recipes Notes<br />
+        <input class="check-box" type="checkbox" /> &nbsp;Daily Menus<br />
+        <input class="check-box" type="checkbox" /> &nbsp;Expert Advice<br />
+        <div><input type="checkbox" id="userAgreement" required="required" onkeydown="signMeUpWKey()"/>By creating an account, you agree to our <a href="#">terms & conditions.</a></div>
+    </div>
+    <div><input id="finishbtn" type="button" value="Sign Me Up" onclick="signMeUp()"/></div>
+</form>
+
+<!-- Notification -->
+<div class="notification" id="my-alert">
+<span onclick="hideAlert()">&times;</span>
+  <h2 id="alert-name">Alert Name!</h2>
+  <p id="alert-content">Alert Content.</p>
+</div>
+
+<!-- Back-to-top button -->
+<img src="ButtonIcon/back_to_top.png" id="back-to-top-button" onclick="backToTop()"/>
+</body>
+</html>

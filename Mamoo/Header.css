@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* CSS Document */
+
+#header{
+	background-color:#F06263;
+	width:100%;
+	float:left;
+	min-width:1240px;
+	height:90px;
+	position:relative;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+#header-left{
+	float:left;
+	width:30%;
+	text-align:center;
+}
+#logo:hover{
+	cursor:pointer;
+}
+#header-right-top{
+	background-color:;
+	float:left;
+	width:70%;
+	font-size:15px;
+	color:#FFF;
+}
+#header-right-top a{
+	float:right;
+	padding:7px;
+}
+#header-right-top a:hover{
+	cursor:pointer;
+	color:#F06263;
+	background-color:white;
+}
+#header-right-bot{
+	float:left;
+	width:70%;
+}
+#search-box{
+	float:right;
+	margin-top:5px;
+	margin-right:40px;
+	width:260px;
+	background-color:#000;
+}
+#search-box input{
+	float:left;
+	height:35px;
+	width:225px;
+	font-size:16px;
+	border:none;
+	font-style:italic;
+}
+#search-box img{
+	width:35px;
+	height:35px;
+}
+#nav{
+	float:left;
+	background-color:;
+	width:60%;
+}
+#nav>div{
+	display:inline-block;
+	
+	color:#FFF;
+	position:relative;
+}
+.menu-content a{
+	display:block;
+	padding:10px;
+	background-color:white;
+	text-decoration:none;
+	color:#F06263;
+}
+.menu-content a:visited{
+	color:#F06263;
+}
+#nav div:hover{
+	color:#F06263;
+	background-color:#FFFFFF;
+	cursor:pointer;
+}
+#nav div:hover .menu-content{
+	display:block;
+}
+.menu-content a:hover{
+	background-color:#CCC;
+}
+.menu{
+	padding:20px;
+}
+.menu-content{
+	display:none;
+	position:absolute;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	min-width:150px;
+}

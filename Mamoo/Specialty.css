@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+
+#body{
+	float:left;
+	width:100%;
+	min-width:1240px;
+	border:;/*toan bo*/
+	position:;
+	background-color:#F1F1F1;
+}
+#specialty{ /*khung chua anh*/
+	border:;
+	width:100%;
+	height:400px;
+	margin:0 auto;
+	position:relative;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+}
+#specialty>img{
+	float:left;
+	width:100%;
+	object-fit:cover;
+	height:400px;
+	position:absolute;
+}
+.imgShow{
+	transition: opacity 1s;
+}
+#specialty div img{
+	background-color:black;
+	opacity:0.35;
+}
+#prev{
+	float:left;
+	position:absolute;
+	top:50px;
+}
+#next{
+	float:right;
+	position:relative;
+	top:50px;
+}
+#prev:hover, #next:hover{
+	cursor:pointer;
+	opacity:0.5;
+}
+.thumbnail{
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:150px;
+	background:#000;
+	opacity:0;
+	color:white;
+	
+}
+.thumbnail h2{
+	margin-left:30px;
+}
+.thumbnail p{
+	margin:0 30px 30px 50px;
+	font-size:20px;
+}
+#todaysRecipe{
+	background-color:#000;
+	opacity:0.5;
+	padding:10px;
+	font-size:50px;
+	color:white;
+	position:absolute;
+	top:30px;
+	left:100px;
+}
+#back-to-top-button{
+	width:50px;
+	height:50px;
+	position:fixed;
+	right:5%;
+	bottom:100px;
+	display:none;
+	opacity:0.7;
+	transition: opacity 0.5s;
+}
+#back-to-top-button:hover{
+	cursor:pointer;
+	opacity:1;
+}

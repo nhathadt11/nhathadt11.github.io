@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Notifications</title>
+<style>
+.notification{
+	padding:0 16px 0 16px;
+	background-color:#4CAF50;
+	color:white;
+	float:right;
+	position:fixed;
+	right:;
+	transition: transform 0.5s;
+}
+.notification h3{
+	margin:10px 0 10px 0;
+}
+.notification p{
+	font-size:18px;
+	margin:15px 0 15px 0;
+}
+.notification span{
+	float:right;
+}
+.notification span:hover{
+	cursor:pointer;
+}
+</style>
+<script>
+function showAlert(){
+	document.getElementById('myAlert').style.transform = "translateX(-385px)";
+}
+function hideAlert(){
+	document.getElementById('myAlert').style.transform = "translateX(385px)";
+}
+</script>
+</head>
+
+<body onload="">
+
+<div class="notification" id="myAlert">
+<span onclick="runAlert()">&times;</span>
+  <h3>Success!</h3>
+  <p>Green often indicates something successful or positive.</p>
+</div>
+</body>
+</html>
