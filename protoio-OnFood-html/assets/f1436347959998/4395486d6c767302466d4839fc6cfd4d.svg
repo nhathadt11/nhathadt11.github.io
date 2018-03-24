@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Soup</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="stroked" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Kitchen" sketch:type="MSLayerGroup" transform="translate(-7.000000, -118.000000)" stroke="#535353" stroke-width="2" stroke-linejoin="round">
+            <g id="Soup" transform="translate(8.000000, 126.000000)" sketch:type="MSShapeGroup">
+                <path d="M1,25 L57,25 L47,40 L11,40 L1,25 Z" id="Rectangle-675" stroke-linecap="round"></path>
+                <path d="M58,26 L0,26" id="Line" stroke-linecap="square"></path>
+                <path d="M37,25 L52,12" id="Line" stroke-linecap="square"></path>
+                <path d="M26.7633413,0 C26.7633413,0 21.9040421,2.25461238 25.0730777,8.56541225 C28.2421132,14.8762121 24.719664,17.0940917 24.719664,17.0940917" id="Path-1336" stroke-linecap="round"></path>
+                <path d="M33.7633413,0 C33.7633413,0 28.9040421,2.25461238 32.0730777,8.56541225 C35.2421132,14.8762121 31.719664,17.0940917 31.719664,17.0940917" id="Path-1336" stroke-linecap="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

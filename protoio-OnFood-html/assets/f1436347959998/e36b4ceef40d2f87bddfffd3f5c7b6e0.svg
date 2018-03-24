@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Rice</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="stroked" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Kitchen" sketch:type="MSLayerGroup" transform="translate(-487.000000, -1318.000000)" stroke="#535353" stroke-width="2" stroke-linejoin="round">
+            <g id="Rice" transform="translate(492.000000, 1321.000000)" sketch:type="MSShapeGroup">
+                <path d="M51.7512454,23 C51.9152338,24.6341362 52,26.3033617 52,28 C52,38.2209321 48.9237252,47.4470145 43.983243,54 L43.983243,54 L8.01675699,54 C3.07627484,47.4470145 0,38.2209321 0,28 C0,26.3033617 0.0847661938,24.6341362 0.248754582,23 L51.7512454,23 L51.7512454,23 Z" id="Oval-752" stroke-linecap="round"></path>
+                <path d="M4.10001812,23 C4.48559569,21.1005028 5.94798705,19.5920299 7.82227707,19.1394962 C8.68617292,18.4275722 9.79315404,18 11,18 C11.5809986,18 12.1388521,18.099096 12.6575806,18.281308 C13.5432543,17.4847285 14.7150199,17 16,17 C16.4644635,17 16.9141354,17.0633299 17.3408519,17.1818257 L17.3408519,17.1818257 C18.0681855,15.3193868 19.8800131,14 22,14 C23.6358178,14 25.0881599,14.7855533 26.0003662,16 C27.4309279,16.0001025 28.7211437,16.6009897 29.6324573,17.564105 L29.6324573,17.564105 C30.4874882,16.0343207 32.1229548,15 34,15 C36.0566903,15 37.8233481,16.2417769 38.5911203,18.0164777 C38.7259724,18.0055634 38.8623365,18 39,18 C40.6747187,18 42.1571314,18.8233595 43.0645237,20.0873639 L43.0645237,20.0873639 C43.3675648,20.030009 43.6802779,20 44,20 C46.050319,20 47.8123997,21.2340952 48.5839563,23 L4.10001812,23 Z" id="Oval-752" stroke-linecap="round"></path>
+                <path d="M25,22 L35.1878185,0.899857283" id="Line" stroke-linecap="square"></path>
+                <path d="M29.6521893,22 L52,2.18306136" id="Line" stroke-linecap="square"></path>
+                <path d="M5,49 L47,49" id="Line" stroke-linecap="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

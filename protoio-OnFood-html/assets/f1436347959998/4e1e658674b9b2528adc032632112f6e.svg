@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Bread</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="stroked" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Kitchen" sketch:type="MSLayerGroup" transform="translate(-127.000000, -358.000000)" stroke="#535353" stroke-width="2" stroke-linejoin="round">
+            <g id="Bread" transform="translate(130.000000, 367.000000)" sketch:type="MSShapeGroup">
+                <path d="M17,8.5 C17,3.80557963 25.2827321,0 35.5,0 C45.7172679,0 54,3.80557963 54,8.5 C54,10.2129499 52.8971943,11.807555 51,13.1421101 L51,29.9911813 C51,33.3097602 48.3166691,36 45.0045193,36 L33.4883771,36" id="Rectangle-693" stroke-linecap="round"></path>
+                <path d="M34,21.1421101 L34,37.9911813 C34,41.3097602 31.3166691,44 28.0045193,44 L8.99548069,44 C5.68426814,44 3,41.3107742 3,37.9911813 L3,21.1421101 C1.1028057,19.807555 0,18.2129499 0,16.5 C0,11.8055796 8.28273213,8 18.5,8 C28.7172679,8 37,11.8055796 37,16.5 C37,18.2129499 35.8971943,19.807555 34,21.1421101 Z" id="Rectangle-693" stroke-linecap="round"></path>
+                <path d="M11,15 L13,15" id="Line-224"></path>
+                <path d="M14,18 L16,18" id="Line-217"></path>
+                <path d="M34,9 L36,9" id="Line-217"></path>
+                <path d="M16,15 L18,15" id="Line-218"></path>
+                <path d="M36,6 L38,6" id="Line-218"></path>
+                <path d="M18,19 L20,19" id="Line-219"></path>
+                <path d="M38,10 L40,10" id="Line-219"></path>
+                <path d="M24,15 L26,15" id="Line-220"></path>
+                <path d="M44,6 L46,6" id="Line-220"></path>
+                <path d="M20,16 L22,16" id="Line-221"></path>
+                <path d="M22,19 L24,19" id="Line-222"></path>
+                <path d="M15,21 L17,21" id="Line-223"></path>
+            </g>
+        </g>
+    </g>
+</svg>
